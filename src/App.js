@@ -15,7 +15,7 @@ import ReqireAuth from "./Pages/AuthPage/ReqireAuth";
 
 function App() {
   return (
-    <div>
+    <div className="">
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
