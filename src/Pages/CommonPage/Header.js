@@ -3,6 +3,7 @@ import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from "react-router-dom";
 import auth from "../../firebase.init";
+import homeLogo from '../../image/hoe-logo.png'
 
 const Header = () => {
   const [user]=useAuthState(auth)
@@ -69,9 +70,9 @@ const Header = () => {
               {MenuItems}
             </ul>
           </div>
-          <a class="btn btn-ghost normal-case text-2xl text-white">
+          <img src={homeLogo} alt=""/> <Link to='/' class="btn btn-ghost normal-case text-2xl text-white">
             Techno Tools
-          </a>
+          </Link>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal p-0 text-white text-bold text-xl">
