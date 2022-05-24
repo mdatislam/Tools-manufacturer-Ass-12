@@ -30,6 +30,9 @@ const Header = () => {
         user ? 
         
       <div className="flex items-center">
+        <li>
+        <Link to="/Purchase/:id">Parchase</Link>
+      </li>
         <li className="bg-green-400 rounded-md">
         <Link onClick={logout} to="/">Sign Out</Link>
       </li>

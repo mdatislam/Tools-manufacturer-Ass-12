@@ -11,6 +11,7 @@ import Register from "./Pages/AuthPage/Register";
 import { ToastContainer } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import ReqireAuth from "./Pages/AuthPage/ReqireAuth";
+import Purchase from './Pages/AuthPage/Purchase';
 
 
 function App() {
@@ -19,12 +20,13 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/Blog" element={
+        <Route path="/Purchase/:id" element={
           <ReqireAuth>
-            <Blog></Blog>
+            <Purchase/>
           </ReqireAuth>
         }></Route>
         <Route path="/About" element={<About></About>}></Route>
+        <Route path="/Blog" element={<Blog></Blog>}></Route>
         <Route path="/Login" element={<Login></Login>}></Route>
         <Route path="/SignOut" element={<Register></Register>}></Route>
         <Route path="/Footer" element={<Footer></Footer>}></Route>
