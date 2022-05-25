@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { useParams } from "react-router-dom";
+import ConfirmOrder from "./ConfirmOrder";
 
 const Purchase = () => {
   const [product, setProduct] = useState([]);
-  const [input, setInput] = useState(null);
+const [order, setOrder]= useState(null)
 
   const {
     _id,
@@ -33,9 +34,9 @@ const Purchase = () => {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
-    setInput(data.orderQuantity);
+   
     const newStock = parseInt(stock) + parseInt(data.orderQuantity);
-    console.log(newStock);
+    // console.log(newStock);
     fetch(url, {
       method: "PUT",
       headers: {
@@ -45,7 +46,7 @@ const Purchase = () => {
     })
       .then((res) => res.json())
       .then((result) => {
-        console.log(result);
+        // console.log(result);
         setProduct(result);
       });
   };
@@ -55,7 +56,7 @@ const Purchase = () => {
       <div class="card bg-base-100 shadow-xl flex flex-col  lg:flex-row">
         <figure className="flex-1">
           <img src={img} alt="" />
-          
+
         </figure>
 
         <div className="flex-1">
@@ -125,11 +126,17 @@ const Purchase = () => {
                 />
               </div>
             </form>
-             <h2 className="text-center text-xl uppercase">
-              {" "}
-              to place order,{" "}
-              <span className="text-blue-600">put order quantity</span>
-            </h2> 
+             
+            <label for="toolsOrder" onClick={()=>setOrder(product)} class="btn modal-button mt-4 btn-success text-white text-2xl">Confirm Order</label> 
+          </div>
+          <div>
+            {
+             order &&  <ConfirmOrder
+              order={order}
+              product={product}
+              setOrder={setOrder}
+              ></ConfirmOrder>
+            }
           </div>
         </div>
       </div>

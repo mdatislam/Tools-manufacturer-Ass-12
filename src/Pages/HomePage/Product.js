@@ -23,7 +23,7 @@ const Product = ({product}) => {
       </div>
       <div className="flex-1">
       <h2 class=""> <span className='font-bold text-pink-400 text-base'>Brand</span> : {Brand}</h2>
-      <p class=""><span className='font-bold text-pink-400 text-base'>Stock :</span></p>
+      <p class=""><span className='font-bold text-pink-400 text-base'>Stock :</span>{stock}</p>
       
       </div>
       </div> 
