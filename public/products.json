@@ -5,7 +5,7 @@
             "name": "Sony-SW-4321",
 	    "Brand":"Sony-Bravia",
             "unitPrice": "55000",
-	    "Stock":"15",
+	    "stock":"15",
 	     "minimuOrderQuantity":"10",
 	     "Description":"sit amet consectetur adipisicing elit. Atque eius cum nulla obcaecati, maiores, quis vel blanditiis dolores, sed porro est. Harum dolorum vitae ratione quos eum impedit dolor inventore!",
              "img": "https://i.ibb.co/KN6LJNG/TV.jpg"
@@ -16,7 +16,7 @@
             "name": "WM-S34536",
             "Brand":"Butterfly",
             "unitPrice": "55000",
-	    "Stock":"15",
+	    "stock":"15",
 	     "minimuOrderQuantity":"10",
 "Description":"sit amet consectetur adipisicing elit. Atque eius cum nulla obcaecati, maiores, quis vel blanditiis dolores, sed porro est. Harum dolorum vitae ratione quos eum impedit dolor inventore!",
             "img": "https://i.ibb.co/h9q1s49/washing-Machine.jpg"
@@ -27,7 +27,7 @@
             "name": "BT-Oven-S324",
 		"Brand":"Butterfly",
             "unitPrice": "55000",
-	    "Stock":"15",
+	    "stock":"15",
 	     "minimuOrderQuantity":"10",
 "Description":"sit amet consectetur adipisicing elit. Atque eius cum nulla obcaecati, maiores, quis vel blanditiis dolores, sed porro est. Harum dolorum vitae ratione quos eum impedit dolor inventore!",
             "img": "https://i.ibb.co/0h7w5c4/microwave-oven.jpg"
@@ -38,7 +38,7 @@
             "name": "RC-Singer",
 		"Brand":"Singer",
             "unitPrice": "55000",
-	    "Stock":"15",
+	    "stock":"15",
 	     "minimuOrderQuantity":"10",
 "Description":"sit amet consectetur adipisicing elit. Atque eius cum nulla obcaecati, maiores, quis vel blanditiis dolores, sed porro est. Harum dolorum vitae ratione quos eum impedit dolor inventore!",
             "img": "https://i.ibb.co/5RLsqGP/rice-cooker.jpg"
@@ -49,7 +49,7 @@
             "name":"AC-General",
 		"Brand":"General",
             "unitPrice": "55000",
-	    "Stock":"15",
+	    "stock":"15",
 	     "minimuOrderQuantity":"10",
 "Description":"sit amet consectetur adipisicing elit. Atque eius cum nulla obcaecati, maiores, quis vel blanditiis dolores, sed porro est. Harum dolorum vitae ratione quos eum impedit dolor inventore!",
             "img": "https://i.ibb.co/rQsTrpc/Air-Conditionar.jpg"
@@ -60,7 +60,7 @@
            "name":"LG-A34562",
 		"Brand":"LG",
             "unitPrice": "55000",
-	    "Stock":"15",
+	    "stock":"15",
 	     "minimuOrderQuantity":"10",
 "Description":"sit amet consectetur adipisicing elit. Atque eius cum nulla obcaecati, maiores, quis vel blanditiis dolores, sed porro est. Harum dolorum vitae ratione quos eum impedit dolor inventore!",
             "img": "https://i.ibb.co/18YPPjm/fridge.jpg"
@@ -71,7 +71,7 @@
            "name":"HP-640",
 		"Brand":"HP",
             "price": "72000",
-		"Stock":"7",
+		"stock":"7",
 "Description":"sit amet consectetur adipisicing elit. Atque eius cum nulla obcaecati, maiores, quis vel blanditiis dolores, sed porro est. Harum dolorum vitae ratione quos eum impedit dolor inventore!",
             "img": "https://i.ibb.co/58qbnX4/Laptop.jpg"
         },
@@ -81,7 +81,7 @@
            "name":"Samung-A32",
 		"Brand":"Samsung",
             "unitPrice": "55000",
-	    "Stock":"15",
+	    "stock":"15",
 	     "minimuOrderQuantity":"10",
 "Description":"sit amet consectetur adipisicing elit. Atque eius cum nulla obcaecati, maiores, quis vel blanditiis dolores, sed porro est. Harum dolorum vitae ratione quos eum impedit dolor inventore!",
             "img": "https://i.ibb.co/MN2xZQG/mobile.jpg"
@@ -92,7 +92,7 @@
            "name":"Desktop-Lenovo",
 		"Brand":"Lenovo",
             "unitPrice": "55000",
-	    "Stock":"15",
+	    "stock":"15",
 	     "minimuOrderQuantity":"10",
 "Description":"sit amet consectetur adipisicing elit. Atque eius cum nulla obcaecati, maiores, quis vel blanditiis dolores, sed porro est. Harum dolorum vitae ratione quos eum impedit dolor inventore!",
             "img": "https://i.ibb.co/HqRtZjD/Desktop.jpg"
@@ -103,7 +103,7 @@
            "name":"SM-Huawe-3423",
 	"Brand":"Lenovo",
             "unitPrice": "55000",
-	    "Stock":"15",
+	    "stock":"15",
 	     "minimuOrderQuantity":"10",
 "Description":"sit amet consectetur adipisicing elit. Atque eius cum nulla obcaecati, maiores, quis vel blanditiis dolores, sed porro est. Harum dolorum vitae ratione quos eum impedit dolor inventore!",
             "img": "https://i.ibb.co/Hg4JnHW/smart-watch.jpg"

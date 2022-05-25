@@ -8,7 +8,7 @@ import homeLogo from '../../image/hoe-logo.png'
 const Header = () => {
   const [user]=useAuthState(auth)
   const navigate = useNavigate()
-  console.log(user)
+  // console.log(user)
 
   const logout=()=>{
     signOut(auth)

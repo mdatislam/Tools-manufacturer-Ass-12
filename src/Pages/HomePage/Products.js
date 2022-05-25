@@ -7,7 +7,10 @@ const Products = () => {
     useEffect(()=>{
         fetch('http://localhost:5000/products')
         .then(res=>res.json())
-        .then(data=>setProduct(data))
+        .then(data=>{
+            console.log(data)
+            setProduct(data)
+        })
     },[products])
             
     return (
@@ -21,11 +24,11 @@ const Products = () => {
             <h2 className='text-center my-5 text-Purple-600 text-3xl font-bold py-5'>Total Manufactured Items:{products.length}</h2>
             <div className=' sm:container sm:mx-auto px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 py-5'>
                 
-                {
+                 {
                 products.map(product=> <Product
-                key={Product._id}
+                key={Product.id}
                 product={product}></Product>)
-                }
+                } 
             </div>
 
             
