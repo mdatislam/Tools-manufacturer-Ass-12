@@ -26,18 +26,22 @@ const Header = () => {
       <li>
         <Link to="/About">About</Link>
       </li>
+      <li>
+        <Link to="/Purchase/:id">Purchase</Link>
+      </li>
       {
         user ? 
         
       <div className="flex items-center">
         <li>
-        <Link to="/Purchase/:id">Parchase</Link>
+        <Link to="/Dashboard">Dashboard</Link>
       </li>
-        <li className="bg-green-400 rounded-md">
+        <li className=" btn btn-outline  text-white ">
         <Link onClick={logout} to="/">Sign Out</Link>
       </li>
       <span className="text-secondary">{user.displayName}</span>
-      </div>:
+      </div>
+      :
       <li>
       <Link to="/Login">Login</Link>
     </li>
