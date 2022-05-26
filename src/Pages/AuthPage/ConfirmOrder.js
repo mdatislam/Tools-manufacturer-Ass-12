@@ -42,7 +42,7 @@ const ConfirmOrder = ({ product, setOrder }) => {
         .then((res) => res.json())
         .then((result) => {
           if (result.success) {
-            toast.success("Order Place Successfully");
+            toast("Order Place Successfully");
           } else {
             toast.error(" Something Wrong");
           }

@@ -46,6 +46,7 @@ const MyOrderList = () => {
               <th>Product Name</th>
               <th>Order Quantity</th>
               <th>Payment Status</th>
+              <th>Action</th>
             </tr>
           </thead>
           <tbody>
