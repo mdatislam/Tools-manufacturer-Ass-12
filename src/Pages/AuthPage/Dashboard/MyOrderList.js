@@ -25,7 +25,7 @@ const MyOrderList = () => {
     data:orderList,
     refetch,
   } = useQuery("orderList", () =>
-    fetch(`http://localhost:5000/order/${user.email}`
+    fetch(`http://localhost:5000/order/${user?.email}`
     ).then((res) => res.json())
   
   ); 
