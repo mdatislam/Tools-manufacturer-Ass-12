@@ -6,17 +6,17 @@ const UpdateProfile = ({ user, setProfile }) => {
       event.preventDefault(); 
       const mobile = event.target.mobile.value;
       const address = event.target.address.value;
-      const role = event.target.role.value;
+      const degree = event.target.degree.value;
 
       const updateUser={
           name:user.displayName, 
           email:user.email,
           mobile:mobile, 
-          role:role,
+          degree:degree,
           address:address
       }
-      fetch("http://localhost:5000/users", {
-        method: "POST",
+      fetch(`http://localhost:5000/users/${user.email}`, {
+        method: "PUT",
         headers: {
           "content-type": "application/json",
         },
@@ -31,7 +31,7 @@ const UpdateProfile = ({ user, setProfile }) => {
           }
         });
     
-      setProfile('');
+      setProfile(null);
   };
 
   return (
@@ -74,9 +74,9 @@ const UpdateProfile = ({ user, setProfile }) => {
               />
               <input
                 type="text"
-                placeholder="type Role"
+                placeholder="type highest degree"
                 required
-                name="role"
+                name="degree"
                 class="input input-bordered w-full max-w-xs mb-2"
               />
               <textarea
@@ -89,7 +89,7 @@ const UpdateProfile = ({ user, setProfile }) => {
                 type="submit"
                 class="btn btn-success text-white font-bold  w-full max-w-xs mb-2"
               >
-                Save Change
+               Submit
               </button>
             </div>
           </form>

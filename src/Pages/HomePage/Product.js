@@ -18,7 +18,7 @@ const Product = ({product}) => {
   <div className='flex flex-row justify-space'>
       <div className="flex-1">
       <h2 class="text-sm font-bold"> <span className='font-bold text-pink-400 text-base'>Name</span> : {name}</h2>
-      <h2 class=""> <span className='font-bold text-pink-400 text-base'>Unit Price</span> :  $ {unitPrice}</h2>
+      <h2 class=""> <span className='font-bold text-pink-400 text-base'>Unit Price</span> : <span className=''> $ {unitPrice}</span></h2>
       <h2 class=""> <span className='font-bold text-pink-400 text-base'>Min Order qty</span>: {minimuOrderQuantity}</h2>
       </div>
       <div className="flex-1">

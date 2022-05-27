@@ -27,6 +27,7 @@ const MyOrderList = () => {
   } = useQuery("orderList", () =>
     fetch(`http://localhost:5000/order/${user.email}`
     ).then((res) => res.json())
+  
   ); 
   if(isLoading){
       return <Loading></Loading>

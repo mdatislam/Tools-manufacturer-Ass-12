@@ -10,12 +10,12 @@ import Login from "./Pages/AuthPage/Login";
 import Dashboard from "./Pages/AuthPage/Dashboard/Dashbord";
 import MyProfile from "./Pages/AuthPage/Dashboard/Profile";
 import MyOrderList from "./Pages/AuthPage/Dashboard/MyOrderList";
-import Reviews from "./Pages/AuthPage/Dashboard/Reviews";
 import Register from "./Pages/AuthPage/Register";
 import { ToastContainer } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import ReqireAuth from "./Pages/AuthPage/ReqireAuth";
 import Purchase from './Pages/AuthPage/Purchase';
+import ReviewAdd from "./Pages/AuthPage/Dashboard/ReviewAdd";
 
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
         <Route path='/Dashboard' element={<Dashboard></Dashboard>}>
         <Route index element={<MyProfile></MyProfile>}></Route>
         <Route path="MyOrderList" element={<MyOrderList></MyOrderList>}></Route>
-        <Route path="Reviews" element={<Reviews></Reviews>}></Route>
+        <Route path="ReviewAdd" element={<ReviewAdd></ReviewAdd>}></Route>
         </Route>
         <Route path="/About" element={<About></About>}></Route>
         <Route path="/Blog" element={<Blog></Blog>}></Route>

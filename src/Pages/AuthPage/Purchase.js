@@ -102,6 +102,25 @@ const [order, setOrder]= useState(null)
               </div>
             </div>
 
+
+{/* <div class="stats bg-primary text-primary-content">
+  <h2>{name}</h2>
+  <div class="stat">
+    <div class="stat-title">Account balance</div>
+    <div class="stat-value">$89,400</div>
+    <div class="stat-title">Account balance</div>
+    <div class="stat-value">$89,400</div>
+   
+  </div>
+  
+  <div class="stat">
+    <div class="stat-title">Current balance</div>
+    <div class="stat-value">$89,400</div>
+   
+  </div>
+  
+</div> */}
+
             <p>
               <span className="font-bold text-pink-400 text-base">
                 Product-info
