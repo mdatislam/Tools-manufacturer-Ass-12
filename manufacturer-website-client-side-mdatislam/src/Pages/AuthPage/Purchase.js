@@ -19,7 +19,7 @@ const Purchase = () => {
   } = product;
 
   const { id } = useParams();
-  const url = `http://https://still-spire-24654.herokuapp.com/products/${id}`;
+  const url = `https://still-spire-24654.herokuapp.com/products/${id}`;
   useEffect(() => {
     fetch(url, {
       method: "GET",

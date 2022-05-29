@@ -1,0 +1,104 @@
+[
+    {
+            
+	    
+            "name": "screwdriver set",
+            "unitPrice": "550",
+	    "stock":"500",
+	     "minimuOrderQuantity":"100",
+	     "Description":"screwdriver, tool, usually hand-operated, for turning screws with slotted heads. For screws with one straight diametral slot cut across the head, standard screwdrivers with flat blade tips and in a variety of sizes are used.",
+             "img": "https://i.ibb.co/LYkRvcd/screwdrive-set2a.png"
+        },
+
+	{
+            
+	    
+            "name": " Guti Screwdriver",
+            "unitPrice": "2550",
+	    "stock":"450",
+	     "minimuOrderQuantity":"60",
+	     "Description":"screwdriver, tool, usually hand-operated, for turning screws with slotted heads. For screws with one straight diametral slot cut across the head, standard screwdrivers with flat blade tips and in a variety of sizes are used.",
+             "img": "https://i.ibb.co/hcGPg7k/screw-driver-seta.png"
+        },
+  
+	{
+            
+	    
+            "name": " Adjustable Wrench",
+            "unitPrice": "150",
+	    "stock":"1200",
+	     "minimuOrderQuantity":"200",
+	     "Description":"An adjustable spanner is an open-ended wrench with a moveable jaw. Its function is the same as any regular spanner - to grip fasteners, such as nuts and bolts - however, only adjustable spanners can grip fasteners of all sizes, thanks to their moveable jaw",
+             "img": "https://i.ibb.co/smZMGmR/adjust-wrench-a.png"
+        },
+	{
+            
+	    
+            "name": " Piller",
+            "unitPrice": "150",
+	    "stock":"1000",
+	     "minimuOrderQuantity":"100",
+	     "Description":"The Universal Pillar Tool includes four iron castings, namely the Base , 2 Arms and the 6 diameter Table . The base is secured to a base board and supports the ground steel column . This column carries the two arms, which are quite free to slide up and down or rotate about it. The table will fit either arm.",
+             "img": "https://i.ibb.co/gyPT1NX/adjust-wrench-a-6.png"
+        },
+  	{
+            
+	    
+            "name": " Hand Cutting Plus",
+            "unitPrice": "450",
+	    "stock":"800",
+	     "minimuOrderQuantity":"90",
+	     "Description":"A bar clamp is made up of a long, metal bar and is designed to hold large and heavy workpieces. Due to the strength of the steel bar, and ability to withhold the holding pressure, it is capable of heavy-duty clamping.",
+             "img": "https://i.ibb.co/58zmg4D/adjust-wrench-a-7.png"
+        },
+	{
+            
+	    
+            "name": "Adjust Able Clamp",
+            "unitPrice": "1250",
+	    "stock":"700",
+	     "minimuOrderQuantity":"70",
+	     "Description":"The Universal Pillar Tool includes four iron castings, namely the Base , 2 Arms and the 6 diameter Table . The base is secured to a base board and supports the ground steel column . This column carries the two arms, which are quite free to slide up and down or rotate about it. The table will fit either arm.",
+             "img": "https://i.ibb.co/hW4h6V6/adjust-wrench-a-5.png"
+        },
+	{
+            
+	    
+            "name": "Table Swa Machine",
+            "unitPrice": "3650",
+	    "stock":"300",
+	     "minimuOrderQuantity":"50",
+	     "Description":"The Universal Pillar Tool includes four iron castings, namely the Base , 2 Arms and the 6 diameter Table . The base is secured to a base board and supports the ground steel column . This column carries the two arms, which are quite free to slide up and down or rotate about it. The table will fit either arm.",
+             "img": "https://i.ibb.co/Vmhnrp8/adjust-wrench-a-4.png"
+        },
+	{
+            
+	    
+            "name": "Hammer",
+            "unitPrice": "350",
+	    "stock":"500",
+	     "minimuOrderQuantity":"80",
+	     "Description":"The Universal Pillar Tool includes four iron castings, namely the Base , 2 Arms and the 6 diameter Table . The base is secured to a base board and supports the ground steel column . This column carries the two arms, which are quite free to slide up and down or rotate about it. The table will fit either arm.",
+             "img": "https://i.ibb.co/P98WZBS/adjust-wrench-a-3.png"
+        },
+	{
+            
+	    
+            "name": "Dril_Hammer",
+            "unitPrice": "4350",
+	    "stock":"400",
+	     "minimuOrderQuantity":"50",
+	     "Description":"The Universal Pillar Tool includes four iron castings, namely the Base , 2 Arms and the 6 diameter Table . The base is secured to a base board and supports the ground steel column . This column carries the two arms, which are quite free to slide up and down or rotate about it. The table will fit either arm.",
+             "img": "https://i.ibb.co/SvcfxN2/adjust-wrench-a-1.png"
+        },
+	{
+            
+	    
+            "name": "Handy Swa",
+            "unitPrice": "2550",
+	    "stock":"300",
+	     "minimuOrderQuantity":"50",
+	     "Description":"The Universal Pillar Tool includes four iron castings, namely the Base , 2 Arms and the 6 diameter Table . The base is secured to a base board and supports the ground steel column . This column carries the two arms, which are quite free to slide up and down or rotate about it. The table will fit either arm.",
+             "img": "https://i.ibb.co/3MknFFf/adjust-wrench-a-2.png"
+        }
+    ]

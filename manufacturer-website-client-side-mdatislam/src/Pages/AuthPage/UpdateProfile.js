@@ -15,16 +15,13 @@ const UpdateProfile = ({ user, setProfile }) => {
       degree: degree,
       address: address,
     };
-    fetch(
-      `http://https://still-spire-24654.herokuapp.com/users/${user?.email}`,
-      {
-        method: "PUT",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(updateUser),
-      }
-    )
+    fetch(`https://still-spire-24654.herokuapp.com/users/${user?.email}`, {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(updateUser),
+    })
       .then((res) => res.json())
       .then((result) => {
         toast.success(" User update Successfully");

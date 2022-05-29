@@ -1,12 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./Pages/CommonPage/Header";
-import Footer from "./Pages/CommonPage/Footer";
 import Home from "./Pages/HomePage/Home";
 import Blog from "./Pages/OtherPage/Blog";
 import About from "./Pages/OtherPage/About";
 import NotFound from "./Pages/OtherPage/NotFound";
-
+import Footer from "./Pages/CommonPage/Footer";
 import Login from "./Pages/AuthPage/Login";
 import Dashboard from "./Pages/AuthPage/Dashboard/Dashbord";
 import MyProfile from "./Pages/AuthPage/Dashboard/Profile";
@@ -42,7 +41,6 @@ function App() {
         <Route path="/Footer" element={<Footer></Footer>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
-      <Footer></Footer>
       <ToastContainer/>
     </div>
   );

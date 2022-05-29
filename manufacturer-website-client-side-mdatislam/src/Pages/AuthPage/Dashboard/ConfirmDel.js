@@ -5,7 +5,7 @@ const ConfirmDel = ({ order, setDel, del, refetch }) => {
   const { _id } = order;
 
   const handleDelete = (id) => {
-    fetch(`http://https://still-spire-24654.herokuapp.com/order/${id}`, {
+    fetch(`https://still-spire-24654.herokuapp.com/order/${id}`, {
       method: "DELETE",
       headers: {
         "content-type": "application/json",

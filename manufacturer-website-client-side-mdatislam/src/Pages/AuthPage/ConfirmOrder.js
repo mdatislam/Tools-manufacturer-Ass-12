@@ -10,7 +10,17 @@ const ConfirmOrder = ({ product, setOrder }) => {
   const { _id, name, stock, minimuOrderQuantity } = product;
   /* const {id} = useParams; 
     const [product,setProduct]= useState([]) */
-  const url = `http://https://still-spire-24654.herokuapp.com/products/${_id}`;
+
+  const [isDisabled, setDisabled] = useState(false);
+  const url = `https://still-spire-24654.herokuapp.com/products/${_id}`;
+  const handleOrder = (e) => {
+    const putOrder = e.target.order.value;
+    console.log(putOrder);
+    if (putOrder < minimuOrderQuantity || putOrder > stock) {
+      setDisabled(true);
+      e.target.reset();
+    }
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -18,56 +28,59 @@ const ConfirmOrder = ({ product, setOrder }) => {
     const address = event.target.address.value;
     const orderQuantity = event.target.order.value;
 
-    // console.log(orderQuantity, stock,minimuOrderQuantity)
+    console.log(orderQuantity, stock, minimuOrderQuantity);
 
-    if (orderQuantity > minimuOrderQuantity && orderQuantity < stock) {
-      const order = {
-        transactionId: _id,
-        customerName: user.displayName,
-        customerEmail: user.email,
-        OrderedProduct: name,
-        mobile: mobile,
-        orderQuantity: orderQuantity,
-        address: address,
-      };
-      // to update the data
+    /*  if (orderQuantity > minimuOrderQuantity && orderQuantity < stock) { */
 
-      fetch("http://https://still-spire-24654.herokuapp.com/order", {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(order),
-      })
-        .then((res) => res.json())
-        .then((result) => {
-          if (result.success) {
-            toast("Order Place Successfully");
-          } else {
-            toast.error(" Something Wrong");
-          }
-        });
-      setOrder(null);
-      // to update new stock
-      const newStock = parseInt(stock) - orderQuantity;
-      console.log(newStock, url);
-      fetch(url, {
-        method: "PUT",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify({ newStock }),
-      })
-        .then((res) => res.json())
-        .then((result) => {
-          console.log(result);
-          //   setProduct(result);
-        });
-    } else {
-      toast.error(
-        `Order quantity must be within ${stock} and ${minimuOrderQuantity}`
-      );
-    }
+    const order = {
+      transactionId: _id,
+      customerName: user.displayName,
+      customerEmail: user.email,
+      OrderedProduct: name,
+      mobile: mobile,
+      orderQuantity: orderQuantity,
+      address: address,
+    };
+    // to update the data
+
+    fetch("https://still-spire-24654.herokuapp.com/order", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(order),
+    })
+      .then((res) => res.json())
+      .then((result) => {
+        if (result.success) {
+          toast("Order Place Successfully");
+        } else {
+          toast.error(" Something Wrong");
+        }
+      });
+    setOrder(null);
+
+    // to update new stock
+    const newStock = parseInt(stock) - orderQuantity;
+    console.log(newStock, url);
+    fetch(url, {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({ newStock }),
+    })
+      .then((res) => res.json())
+      .then((result) => {
+        console.log(result);
+        //   setProduct(result);
+        event.target.reset();
+      });
+    /*  } else  {
+      
+      setDisabled(true)
+      event.target.reset()
+    } */
   };
 
   return (
@@ -124,6 +137,7 @@ const ConfirmOrder = ({ product, setOrder }) => {
                 <input
                   type="number"
                   required
+                  onBlur={handleOrder}
                   name="order"
                   placeholder="Type here order quantity"
                   class="input input-bordered w-full max-w-xs mb-2"
@@ -132,6 +146,7 @@ const ConfirmOrder = ({ product, setOrder }) => {
 
               <button
                 type="submit"
+                disabled={isDisabled}
                 class="btn btn-success text-white font-bold  w-full max-w-xs mb-2"
               >
                 PLACE ORDER
