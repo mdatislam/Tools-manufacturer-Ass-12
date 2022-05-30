@@ -4,7 +4,6 @@ import Header from "./Pages/CommonPage/Header";
 import Footer from "./Pages/CommonPage/Footer";
 import Home from "./Pages/HomePage/Home";
 import Blog from "./Pages/OtherPage/Blog";
-import About from "./Pages/OtherPage/About";
 import NotFound from "./Pages/OtherPage/NotFound";
 import Login from "./Pages/AuthPage/Login";
 import Dashboard from "./Pages/AuthPage/Dashboard/Dashbord";
