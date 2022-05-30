@@ -8,7 +8,7 @@ const Products = () => {
     setProduct(products.slice(0, 6));
   }
   useEffect(() => {
-    fetch("https://still-spire-24654.herokuapp.com/products")
+    fetch("http://localhost:5000/products")
       .then((res) => res.json())
       .then((data) => {
         // console.log(data)
@@ -33,7 +33,7 @@ const Products = () => {
       {/* <h2 className="text-center my-5 text-Purple-600 text-3xl font-bold py-5">
         Our manufactured Products Sample
       </h2> */}
-      <div className=" sm:container sm:mx-auto px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 py-5">
+      <div className=" sm:container sm:mx-auto px-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4 py-5">
         {products.map((product) => (
           <Product key={Product.id} product={product}></Product>
         ))}

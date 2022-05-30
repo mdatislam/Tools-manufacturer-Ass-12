@@ -15,7 +15,7 @@ const UpdateProfile = ({ user, setProfile }) => {
       degree: degree,
       address: address,
     };
-    fetch(`https://still-spire-24654.herokuapp.com/users/${user?.email}`, {
+    fetch(`http://localhost:5000/users/${user?.email}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

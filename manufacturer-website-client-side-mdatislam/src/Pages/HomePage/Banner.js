@@ -15,7 +15,7 @@ const Banner = () => {
     <div class="max-w-md">
       <h1 class="mb-5 text-5xl font-bold">WE ARE EXPERTS IN QUALITY TOOLKITS </h1>
       <p class="mb-5">We are committed to supplying our customers with quality tools and reliable services through our international commercial and production network..</p>
-      <button class="btn btn-primary">Get Started</button>
+     
     </div>
   </div>
 </div>
@@ -34,7 +34,7 @@ const Banner = () => {
     <div class="max-w-md">
       <h1 class="mb-5 text-5xl font-bold uppercase">What makes us special.</h1>
       <p class="mb-5">Our professional team works to increase productivity and cost effectiveness on the market.</p>
-      <button class="btn btn-primary">Get Started</button>
+      
     </div>
   </div>
 </div>
@@ -55,7 +55,7 @@ const Banner = () => {
       <h1 class="mb-5 text-5xl font-bold uppercase">Successful business built
 on trust</h1>
       <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-      <button class="btn btn-primary">Get Started</button>
+    
     </div>
   </div>
 </div>

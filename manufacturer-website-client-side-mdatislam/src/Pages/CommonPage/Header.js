@@ -40,9 +40,6 @@ const Header = () => {
       <li>
         <Link to="/Blog"> Blog</Link>
       </li>
-      <li>
-        <Link to="/About">About</Link>
-      </li>
 
       {user ? (
         <div className="flex items-center">

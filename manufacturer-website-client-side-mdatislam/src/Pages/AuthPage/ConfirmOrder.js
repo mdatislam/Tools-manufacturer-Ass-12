@@ -13,7 +13,7 @@ const ConfirmOrder = ({ product, setOrder }) => {
 
   const [isDisabled, setDisabled] = useState(false);
   // const [putOrder,setPutOrder] = useState( null)
-  const url = `https://still-spire-24654.herokuapp.com/products/${_id}`;
+  const url = `http://localhost:5000/products/${_id}`;
   const handleChange = (e) => {
     const target = e.target.value;
     const min = parseInt(minimuOrderQuantity);
@@ -45,7 +45,7 @@ const ConfirmOrder = ({ product, setOrder }) => {
     };
     // to update the data
 
-    fetch("https://still-spire-24654.herokuapp.com/order", {
+    fetch("http://localhost:5000/order", {
       method: "POST",
       headers: {
         "content-type": "application/json",

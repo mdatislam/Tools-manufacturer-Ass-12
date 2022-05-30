@@ -37,7 +37,7 @@ function App() {
         <Route path="ReviewAdd" element={<ReviewAdd></ReviewAdd>}></Route>
         <Route path="AllOrders" element={<AllOrders></AllOrders>}></Route>
         </Route>
-        <Route path="/About" element={<About></About>}></Route>
+        
         <Route path="/Blog" element={<Blog></Blog>}></Route>
         <Route path="/Login" element={<Login></Login>}></Route>
         <Route path="/SignOut" element={<Register></Register>}></Route>
