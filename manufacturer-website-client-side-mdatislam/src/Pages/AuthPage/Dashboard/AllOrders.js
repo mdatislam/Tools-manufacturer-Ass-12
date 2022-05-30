@@ -10,7 +10,7 @@ import AllOrdersRow from "./AllOrdersRow";
 const AllOrders = () => {
   /* const [allOrders, setAllOrders] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/orders")
+    fetch("https://still-spire-24654.herokuapp.com/orders")
       .then((res) => res.json())
       .then((result) => {
         console.log(result);
@@ -23,7 +23,9 @@ const AllOrders = () => {
     data: allOrders,
     refetch,
   } = useQuery("AllOrderList", () =>
-    fetch(`http://localhost:5000/orders`).then((res) => res.json())
+    fetch(`https://still-spire-24654.herokuapp.com/orders`).then((res) =>
+      res.json()
+    )
   );
   if (isLoading) {
     return <Loading></Loading>;

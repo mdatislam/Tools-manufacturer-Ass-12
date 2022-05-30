@@ -11,7 +11,7 @@ const MyOrderList = () => {
 
   /*   const [orderList, setOrderList]=useState([])
     useEffect(()=>{
-        fetch(`http://localhost:5000/order/${user.email}`)
+        fetch(`https://still-spire-24654.herokuapp.com/order/${user.email}`)
         .then(res=>res.json())
         .then(result=> {
             console.log(result)
@@ -24,8 +24,8 @@ const MyOrderList = () => {
     data: orderList,
     refetch,
   } = useQuery("orderList", () =>
-    fetch(`http://localhost:5000/orders/${user?.email}`).then((res) =>
-      res.json()
+    fetch(`https://still-spire-24654.herokuapp.com/orders/${user?.email}`).then(
+      (res) => res.json()
     )
   );
   if (isLoading) {
