@@ -12,14 +12,18 @@ const ConfirmOrder = ({ product, setOrder }) => {
     const [product,setProduct]= useState([]) */
 
   const [isDisabled, setDisabled] = useState(false);
+  // const [putOrder,setPutOrder] = useState( null)
   const url = `https://still-spire-24654.herokuapp.com/products/${_id}`;
-  const handleOrder = (e) => {
-    const putOrder = e.target.order.value;
-    console.log(putOrder);
-    if (putOrder < minimuOrderQuantity || putOrder > stock) {
+  const handleChange = (e) => {
+    const target = e.target.value;
+    const min = parseInt(minimuOrderQuantity);
+    const max = parseInt(stock);
+    // const target=putOrder
+    console.log(target, min, max);
+    if (min > target || target > max) {
       setDisabled(true);
-      e.target.reset();
     }
+    // setPutOrder(target)
   };
 
   const handleSubmit = (event) => {
@@ -29,8 +33,6 @@ const ConfirmOrder = ({ product, setOrder }) => {
     const orderQuantity = event.target.order.value;
 
     console.log(orderQuantity, stock, minimuOrderQuantity);
-
-    /*  if (orderQuantity > minimuOrderQuantity && orderQuantity < stock) { */
 
     const order = {
       transactionId: _id,
@@ -137,7 +139,7 @@ const ConfirmOrder = ({ product, setOrder }) => {
                 <input
                   type="number"
                   required
-                  onBlur={handleOrder}
+                  onBlur={handleChange}
                   name="order"
                   placeholder="Type here order quantity"
                   class="input input-bordered w-full max-w-xs mb-2"
@@ -147,9 +149,9 @@ const ConfirmOrder = ({ product, setOrder }) => {
               <button
                 type="submit"
                 disabled={isDisabled}
-                class="btn btn-success text-white font-bold  w-full max-w-xs mb-2"
+                class="btn btn-success text-white font-bold  w-full max-w-xs mb-2 uppercase"
               >
-                PLACE ORDER
+                Confirm Order
               </button>
             </div>
           </form>

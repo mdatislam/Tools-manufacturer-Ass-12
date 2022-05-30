@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./Pages/CommonPage/Header";
+import Footer from "./Pages/CommonPage/Footer";
 import Home from "./Pages/HomePage/Home";
 import Blog from "./Pages/OtherPage/Blog";
 import About from "./Pages/OtherPage/About";
 import NotFound from "./Pages/OtherPage/NotFound";
-import Footer from "./Pages/CommonPage/Footer";
 import Login from "./Pages/AuthPage/Login";
 import Dashboard from "./Pages/AuthPage/Dashboard/Dashbord";
 import MyProfile from "./Pages/AuthPage/Dashboard/Profile";
@@ -16,6 +16,8 @@ import { ToastContainer } from 'react-toastify';
 import ReqireAuth from "./Pages/AuthPage/ReqireAuth";
 import Purchase from './Pages/AuthPage/Purchase';
 import ReviewAdd from "./Pages/AuthPage/Dashboard/ReviewAdd";
+import AllOrders from "./Pages/AuthPage/Dashboard/AllOrders";
+
 
 
 function App() {
@@ -33,6 +35,7 @@ function App() {
         <Route index element={<MyProfile></MyProfile>}></Route>
         <Route path="MyOrderList" element={<MyOrderList></MyOrderList>}></Route>
         <Route path="ReviewAdd" element={<ReviewAdd></ReviewAdd>}></Route>
+        <Route path="AllOrders" element={<AllOrders></AllOrders>}></Route>
         </Route>
         <Route path="/About" element={<About></About>}></Route>
         <Route path="/Blog" element={<Blog></Blog>}></Route>
@@ -41,6 +44,7 @@ function App() {
         <Route path="/Footer" element={<Footer></Footer>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
+      <Footer></Footer>
       <ToastContainer/>
     </div>
   );

@@ -10,7 +10,7 @@ const OrderRow = ({order,refetch,index}) => {
     
     return (
       <>
-          <tr class="hover">
+          <tr class="hover border-collapse">
         <th>{index+1}</th>
         <td>{customerName}</td>
         <td>{OrderedProduct}</td>

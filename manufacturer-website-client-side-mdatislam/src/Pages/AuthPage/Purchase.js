@@ -148,7 +148,7 @@ const Purchase = () => {
               onClick={() => setOrder(product)}
               class="btn modal-button mt-4 btn-success text-white text-2xl"
             >
-              Confirm Order
+              PLACE ORDER
             </label>
           </div>
           <div>

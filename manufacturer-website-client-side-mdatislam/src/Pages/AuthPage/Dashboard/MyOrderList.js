@@ -39,7 +39,7 @@ const MyOrderList = () => {
         Total order found: {orderList.length}
       </h3>
       <div class="overflow-x-auto container mx-auto px-4 w-full">
-        <table class="table w-full">
+        <table class="table w-full table-compact container  px-6 mx-auto">
           <thead>
             <tr>
               <th>S/N</th>
