@@ -15,7 +15,7 @@ const Products = () => {
             
     return (
         <div className='container mx-auto mt-4 py-4'>
-            <h2 className='uppercase  text-rose-700 text-center  text-3xl font-bold'>Our Products</h2>
+            <h2 className='uppercase  text-rose-700 text-center  text-3xl font-bold'>Our sample sample Products</h2>
             <div className='flex flex-col justify-center h-10 w-48 text-purple-600 font-bold mx-auto text-5xl items-center'>
             <div class="divider  h-3 items-center">---</div> 
             </div>
