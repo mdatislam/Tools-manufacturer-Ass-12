@@ -12,6 +12,8 @@ const Header = () => {
 
   const logout = () => {
     signOut(auth);
+    localStorage.removeItem('accessToken')
+    navigate("/");
   };
 
   const MenuItems = (
@@ -38,10 +40,7 @@ const Header = () => {
       <li>
         <Link to="/Blog"> Blog</Link>
       </li>
-      <li>
-        <Link to="/About">About</Link>
-      </li>
-     
+
       {user ? (
         <div className="flex items-center">
           <li>

@@ -5,7 +5,7 @@ import ConfirmOrder from "./ConfirmOrder";
 
 const Purchase = () => {
   const [product, setProduct] = useState([]);
-const [order, setOrder]= useState(null)
+  const [order, setOrder] = useState(null);
 
   const {
     _id,
@@ -34,7 +34,6 @@ const [order, setOrder]= useState(null)
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
-   
     const newStock = parseInt(stock) + parseInt(data.orderQuantity);
     // console.log(newStock);
     fetch(url, {
@@ -56,7 +55,6 @@ const [order, setOrder]= useState(null)
       <div class="card bg-base-100 shadow-xl flex flex-col  lg:flex-row">
         <figure className="flex-1">
           <img src={img} alt="" />
-
         </figure>
 
         <div className="flex-1">
@@ -102,8 +100,7 @@ const [order, setOrder]= useState(null)
               </div>
             </div>
 
-
-{/* <div class="stats bg-primary text-primary-content">
+            {/* <div class="stats bg-primary text-primary-content">
   <h2>{name}</h2>
   <div class="stat">
     <div class="stat-title">Account balance</div>
@@ -145,17 +142,23 @@ const [order, setOrder]= useState(null)
                 />
               </div>
             </form>
-             
-            <label for="toolsOrder" onClick={()=>setOrder(product)} class="btn modal-button mt-4 btn-success text-white text-2xl">Confirm Order</label> 
+
+            <label
+              for="toolsOrder"
+              onClick={() => setOrder(product)}
+              class="btn modal-button mt-4 btn-success text-white text-2xl"
+            >
+              PLACE ORDER
+            </label>
           </div>
           <div>
-            {
-             order &&  <ConfirmOrder
-              order={order}
-              product={product}
-              setOrder={setOrder}
+            {order && (
+              <ConfirmOrder
+                order={order}
+                product={product}
+                setOrder={setOrder}
               ></ConfirmOrder>
-            }
+            )}
           </div>
         </div>
       </div>

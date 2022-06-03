@@ -9,7 +9,6 @@ import OrderRow from "./OrderRow";
 const MyOrderList = () => {
   const [user] = useAuthState(auth);
 
-
   /*   const [orderList, setOrderList]=useState([])
     useEffect(()=>{
         fetch(`http://localhost:5000/order/${user.email}`)
@@ -20,29 +19,30 @@ const MyOrderList = () => {
         })
     },[])  */
 
-   const {
+  const {
     isLoading,
-    data:orderList,
+    data: orderList,
     refetch,
   } = useQuery("orderList", () =>
-    fetch(`http://localhost:5000/order/${user?.email}`
-    ).then((res) => res.json())
-  
-  ); 
-  if(isLoading){
-      return <Loading></Loading>
+    fetch(`http://localhost:5000/orders/${user?.email}`).then((res) =>
+      res.json()
+    )
+  );
+  if (isLoading) {
+    return <Loading></Loading>;
   }
 
   return (
     <div>
-      <h3 className="text-blue-600 text-xl text-center mb-2"> Total order found: {orderList.length}</h3>
+      <h3 className="text-blue-600 text-xl text-center mb-2">
+        {" "}
+        Total order found: {orderList.length}
+      </h3>
       <div class="overflow-x-auto container mx-auto px-4 w-full">
-        <table class="table w-full">
+        <table class="table w-full table-compact container  px-6 mx-auto">
           <thead>
             <tr>
-              <th>
-                S/N
-              </th>
+              <th>S/N</th>
               <th>Customer Name</th>
               <th>Product Name</th>
               <th>Order Quantity</th>
@@ -59,7 +59,6 @@ const MyOrderList = () => {
                 index={index}
               ></OrderRow>
             ))}
-            
           </tbody>
         </table>
       </div>
